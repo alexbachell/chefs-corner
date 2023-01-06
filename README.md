@@ -17,4 +17,4 @@ Stage 2: demonstrate my UI design chops by creating a layout from the HTML conte
 - Reference and development documentation
 
 Started: 01/05/2023
-Completed:
+Completed: 01/05/2023
