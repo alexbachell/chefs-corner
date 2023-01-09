@@ -8,57 +8,74 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="primary-navigation">
       <a href="./index.html"
-        ><img src="./images/chefs-corner-logo-full.svg" alt="chefs corner"
+        ><img
+          class="logo"
+          src="./images/chefs-corner-logo-full.svg"
+          alt="chefs corner"
       /></a>
     </nav>
-    <header><h1>Recipes</h1></header>
-    <main>
-      <article>
-        <img
-          src="./images/shrimp-noodle-soup.jpg"
-          alt="Boiled egg and shrimp noodle soup in a bowl" />
-        <h2>Shrimp Noodle Soup</h2>
-        <p>
-          Instant ramen becomes a thing of the past with this quick and
-          nutritious homemade take on the convenience staple.
-        </p>
-        <a href="./recipes/shrimp-noodle-soup.html">Make this recipe</a>
-      </article>
-      <article>
-        <img
-          src="./images/chickpea-curry.jpg"
-          alt="Chickpea curry and rice on a plate" />
-        <h2>Chickpea Curry</h2>
-        <p>
-          This Easy Chickpea curry is the perfect weeknight dinner: it is quick
-          and easy to make, it comes together in one pot.
-        </p>
-        <a href="./recipes/chickpea-curry.html">Make this recipe</a>
-      </article>
-      <article>
-        <img
-          src="./images/neapolitan-pizza.jpg"
-          alt="Neapolitan pizza on a serving plate" />
-        <h2>Neapolitan Pizza</h2>
-        <p>
-          Once you've tasted Neapolitan pizza, you'll never go back. Then you'll
-          spend the rest of your life trying to recreate it at home!
-        </p>
-        <a href="./recipes/neapolitan-pizza.html">Make this recipe</a>
-      </article>
-      <article>
-        <img
-          src="./images/orange-chicken.jpg"
-          alt="Neapolitan pizza on a serving plate" />
-        <h2>Orange Chicken</h2>
-        <p>
-          Chinese orange chicken made with crispy fried chicken covered in an
-          authentic orange sauce.
-        </p>
-        <a href="./recipes/orange-chicken.html">Make this recipe</a>
-      </article>
+    <header class="page-header"><h1>Recipes</h1></header>
+    <main class="container">
+      <div class="recipe-grid">
+        <article class="recipe">
+          <img
+            class="recipe-image"
+            src="./images/shrimp-noodle-soup.jpg"
+            alt="Boiled egg and shrimp noodle soup in a bowl" />
+          <div class="recipe-card">
+            <h2>Shrimp Noodle Soup</h2>
+            <p>
+              Instant ramen becomes a thing of the past with this quick and
+              nutritious homemade take on the convenience staple.
+            </p>
+            <a href="./recipes/shrimp-noodle-soup.html">Make this recipe</a>
+          </div>
+        </article>
+        <article class="recipe">
+          <img
+            class="recipe-image"
+            src="./images/chickpea-curry.jpg"
+            alt="Chickpea curry and rice on a plate" />
+          <div class="recipe-card">
+            <h2>Chickpea Curry</h2>
+            <p>
+              This Easy Chickpea curry is the perfect weeknight dinner: it is
+              quick and easy to make, it comes together in one pot.
+            </p>
+            <a href="./recipes/chickpea-curry.html">Make this recipe</a>
+          </div>
+        </article>
+        <article class="recipe">
+          <img
+            class="recipe-image"
+            src="./images/neapolitan-pizza.jpg"
+            alt="Neapolitan pizza on a serving plate" />
+          <div class="recipe-card">
+            <h2>Neapolitan Pizza</h2>
+            <p>
+              Once you've tasted Neapolitan pizza, you'll never go back. Then
+              you'll spend the rest of your life trying to recreate it at home!
+            </p>
+            <a href="./recipes/neapolitan-pizza.html">Make this recipe</a>
+          </div>
+        </article>
+        <article class="recipe">
+          <img
+            class="recipe-image"
+            src="./images/orange-chicken.jpg"
+            alt="Neapolitan pizza on a serving plate" />
+          <div class="recipe-card">
+            <h2>Orange Chicken</h2>
+            <p>
+              Chinese orange chicken made with crispy fried chicken covered in
+              an authentic orange sauce.
+            </p>
+            <a href="./recipes/orange-chicken.html">Make this recipe</a>
+          </div>
+        </article>
+      </div>
     </main>
   </body>
 </html>
