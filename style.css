@@ -46,6 +46,8 @@ Custom Properties / Variables
   --primary-color: #e6001d;
 
   --basic-padding: 1.25rem;
+  --page-header-padding: 0.625rem;
+  --recipe-card-padding: 1.25rem;
 }
 
 /* ========== 
@@ -98,7 +100,7 @@ Page Header
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--black);
-  padding: 0.625em;
+  padding: var(--page-header-padding);
   margin-bottom: 1.25em;
 }
 
@@ -109,41 +111,60 @@ Page Header
 }
 
 /* ==========
-Homepage Container
+Container
 ========== */
 
 .container {
   max-width: 1024px;
   margin: auto;
-  margin-bottom: 1.25em;
 }
 
 /* ==========
-Recipe Card Grid
+Recipe Card Flexbox Grid
 ========== */
 
-.recipe-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25em;
+.recipe-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .recipe-row {
+    flex-direction: row;
+  }
+}
+
+.recipe-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 .recipe-image {
-  max-height: 426px;
-  width: 100%;
+  max-height: 250px;
   object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
-.recipe-card {
+.recipe-info-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   background-color: var(--grey);
-  padding: var(--basic-padding);
+  padding: var(--recipe-card-padding);
 }
 
-.recipe-card h2 {
-  font-size: 1.5rem;
+.recipe-excerpt {
+  margin-bottom: 1.25rem;
 }
 
-.recipe-card p {
-  font-size: 1.125rem;
-  margin-bottom: 0.625em;
+.recipe-button {
+  margin-bottom: 0;
+  margin-top: auto;
 }
