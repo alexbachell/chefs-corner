@@ -18,3 +18,8 @@ Stage 2: demonstrate my UI design chops by creating a layout from the HTML conte
 
 Started: 01/05/2023
 Completed: 01/05/2023
+
+Stage 3: Demonstrate my CSS chops by stumbling through grid and flexbox options like a boss.
+
+Started: 01/07/2023
+Completed: TBD
