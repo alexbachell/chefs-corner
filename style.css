@@ -45,7 +45,7 @@ Custom Properties / Variables
   --white: #fff;
   --primary-color: #e6001d;
 
-  --basic-padding: 1.25rem;
+  --basic-padding: 1rem;
   --page-header-padding: 0.625rem;
   --recipe-card-padding: 1.25rem;
 }
@@ -66,16 +66,46 @@ h4 {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
 p,
 ol,
 ul,
 li {
   font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
 }
 
 a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+/* Responsive Font Sizes */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  ol,
+  ul,
+  li,
+  a {
+    font-size: 1.125rem;
+  }
 }
 
 /* ==========
@@ -89,6 +119,7 @@ Primary Navigation
 }
 
 .logo {
+  max-height: 2rem;
   margin: auto;
 }
 
@@ -105,7 +136,6 @@ Page Header
 }
 
 .page-header h1 {
-  font-size: 2rem;
   color: var(--white);
   margin: auto;
 }
@@ -120,7 +150,7 @@ Container
 }
 
 /* ==========
-Recipe Card Flexbox Grid
+Recipe Row
 ========== */
 
 .recipe-row {
@@ -128,15 +158,19 @@ Recipe Card Flexbox Grid
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1.25rem;
-  width: 100%;
   margin-bottom: 1.25rem;
 }
 
+/* Desktop Layout */
 @media (min-width: 600px) {
   .recipe-row {
     flex-direction: row;
   }
 }
+
+/* ==========
+Recipe Columns
+========== */
 
 .recipe-column {
   display: flex;
@@ -145,12 +179,9 @@ Recipe Card Flexbox Grid
   flex: 1;
 }
 
-.recipe-image {
-  max-height: 250px;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
+/* ==========
+Recipe Info Card
+========== */
 
 .recipe-info-card {
   display: flex;
@@ -160,6 +191,21 @@ Recipe Card Flexbox Grid
   padding: var(--recipe-card-padding);
 }
 
+.recipe-image {
+  max-height: 196px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+/* Desktop Image Size */
+@media (min-width: 600px) {
+  .recipe-image {
+    max-height: 256px;
+  }
+}
+
 .recipe-excerpt {
   margin-bottom: 1.25rem;
 }
@@ -167,4 +213,9 @@ Recipe Card Flexbox Grid
 .recipe-button {
   margin-bottom: 0;
   margin-top: auto;
+  max-width: 160px;
+}
+
+.recipe-button:hover {
+  color: var(--primary-color);
 }
