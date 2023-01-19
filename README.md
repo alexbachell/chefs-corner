@@ -22,4 +22,4 @@ Completed: 01/05/2023
 Stage 3: Demonstrate my CSS chops by stumbling through grid and flexbox options like a boss.
 
 Started: 01/07/2023
-Completed: TBD
+Completed: 01/18/23
